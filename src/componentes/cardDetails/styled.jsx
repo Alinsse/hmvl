@@ -1,7 +1,7 @@
 // componentes/CharacterCard/styled.jsx
 import styled from "styled-components";
 
-// Container para a lista de cards
+// Container lista cards
 export const DetailContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -12,7 +12,7 @@ export const DetailContainer = styled.div`
   
 `;
 
-// Estilização do container de cada card
+// Card
 export const CharacterInfo = styled.div`
   width: 200px;
   display: flex;
@@ -29,7 +29,7 @@ export const CharacterInfo = styled.div`
   }
 `;
 
-// Estilização da imagem do personagem
+// img personagem
 export const CharacterImage = styled.img`
   width: 133px;
   height: 165px;
@@ -37,7 +37,8 @@ export const CharacterImage = styled.img`
   
 `;
 
-// Estilização do nome do personagem
+
+// nome personagem
 export const CharacterName = styled.p`
   font-weight: 500;
   font-size: 20px;

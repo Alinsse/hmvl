@@ -3,12 +3,12 @@ import React from "react";
 import { DetailContainer, CharacterImage, CharacterInfo } from "./styled";
 
 const CardDetails = ({ character }) => {
-  // Verificar se 'character' está definido
+  // esta definido?
   if (!character) {
     return <p>Carregando detalhes do personagem...</p>;
   }
 
-  // Obter a URL da imagem do personagem
+  //  URL imagem personagem
   const imageUrl = `${character.thumbnail.path}.${character.thumbnail.extension}`;
 
   return (

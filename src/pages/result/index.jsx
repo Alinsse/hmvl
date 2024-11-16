@@ -1,18 +1,25 @@
-// pages/Home.jsx
 import React, { useEffect, useState } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import axios from "axios";
 import { ResultCard } from "../../componentes/resultCard";
 import Banner from "../../componentes/Banner";
+import { PageContainer, CardsWrapper } from "./styled";
+import SearchInput from "../../componentes/input";
 
-export const Result= () => {
+export const Result = () => {
   const [params] = useSearchParams();
   const name = params.get("name");
   const [resultado, setResultado] = useState([]);
+  const navigate = useNavigate();
   const url = "http://gateway.marvel.com/v1/public";
   const ts = "1";
   const apikey = "06ead66137452ef75685fcdc895a6c0b";
   const hash = "2774d42849c52a2ec23f9b2298e41e7a";
+
+  const handleSearch = (searchQuery) => {
+    navigate(`/result?name=${searchQuery}`);  
+  };
+
 
   useEffect(() => {
     if (name) {
@@ -30,11 +37,12 @@ export const Result= () => {
   }, [name]);
 
   return (
-    <>
-      <Banner image="/images/bannerBlack.png"/>
-      <ResultCard resultado={resultado} />
-    </>
-  )
+    <PageContainer>
+      <Banner image="/images/bannerBlack.png" />
+      <SearchInput onSearch={handleSearch} /> 
+      <CardsWrapper>
+        <ResultCard resultado={resultado} />
+      </CardsWrapper>
+    </PageContainer>
+  );
 };
-
-

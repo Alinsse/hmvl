@@ -1,47 +1,78 @@
-// componentes/CharacterCard/styled.jsx
 import styled from "styled-components";
 
-// Container para a lista de cards
+// Lista de cards
 export const CardList = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
-  width: 80%;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px;
   position: relative;
-  
+  width: 100%; 
+  max-width: 1920px; // tela grande 
+  margin: 0 auto; 
+
+  @media (max-width: 1366px) {
+    padding: 15px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
 `;
 
-// Estilização do container de cada card
+// Card individual
 export const CardContainer = styled.div`
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #313140;
+  background-color: #fff;
   border-radius: 14px;
-  padding: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s;
+  overflow: hidden;
+  width: 100%; 
+  max-width: 280px;  
+  cursor: pointer;
+  transition: transform 0.2s;
 
   &:hover {
     transform: scale(1.05);
   }
+
+  @media (max-width: 1366px) {
+    max-width: 240px; // 1366
+  }
+
+  @media (max-width: 1024px) {
+    max-width: 220px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 180px; 
+  }
 `;
 
-// Estilização da imagem do personagem
+// Img personagem
 export const CharacterImage = styled.img`
-  width: 133px;
-  height: 165px;
-  border-radius: 12px;
-  
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+
+  @media (max-width: 768px) {
+    height: 180px; 
+  }
+
+  @media (min-width: 1600px) {
+    height: 300px; 
+  }
 `;
 
-// Estilização do nome do personagem
-export const CharacterName = styled.p`
-  font-weight: 500;
-  font-size: 20px;
-  color: #ffffff;
-  line-height: 20px;
-  font-family: "Inter", sans-serif;
+// Nome
+export const CharacterName = styled.h3`
+  font-size: 1.1rem;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+
+  @media (max-width: 768px) {
+    font-size: 1rem; 
+  }
 `;
