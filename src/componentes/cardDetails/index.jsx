@@ -1,26 +1,26 @@
-// componentes/CardDetails/index.jsx
 import React from "react";
 import { DetailContainer, CharacterImage, CharacterInfo } from "./styled";
 
-const CardDetails = ({ character }) => {
-  // esta definido?
-  if (!character) {
-    return <p>Carregando detalhes do personagem...</p>;
+const CardDetails = ({ characterData }) => {
+  // Verificar se os dados estão disponíveis
+  if (!characterData) {
+    return <p>Dados do personagem não disponíveis.</p>;
   }
 
-  //  URL imagem personagem
-  const imageUrl = `${character.thumbnail.path}.${character.thumbnail.extension}`;
+  const { name, description, thumbnail } = characterData;
 
   return (
     <DetailContainer>
-      <CharacterImage src={imageUrl} alt={character.name} />
+      <CharacterImage
+        src={`${thumbnail.path}.${thumbnail.extension}`}
+        alt={name}
+      />
       <CharacterInfo>
-        <h2>{character.name}</h2>
-        <p>{character.description || "Descrição não disponível."}</p>
+        <h2>{name}</h2>
+        <p>{description || "Descrição não disponível."}</p>
       </CharacterInfo>
     </DetailContainer>
   );
 };
 
 export default CardDetails;
-
