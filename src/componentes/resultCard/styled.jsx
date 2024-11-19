@@ -5,12 +5,15 @@ export const CardList = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
-  padding: 20px;
+  gap: 37px 42px;
+  
   position: relative;
-  width: 100%; 
+  
   max-width: 1920px; // tela grande 
   margin: 0 auto; 
+  right: 75px;
+  top: 370px;
+  height: 100vh;
 
   @media (max-width: 1366px) {
     padding: 15px;
@@ -23,12 +26,15 @@ export const CardList = styled.div`
 
 // Card individual
 export const CardContainer = styled.div`
-  background-color: #fff;
+  display: flex;
+  align-items: center;
+  background-color: #313140;
   border-radius: 14px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  width: 100%; 
-  max-width: 280px;  
+  width: 472px;
+  height: 187px;
+  gap: 12px;
   cursor: pointer;
   transition: transform 0.2s;
 
@@ -36,43 +42,53 @@ export const CardContainer = styled.div`
     transform: scale(1.05);
   }
 
-  @media (max-width: 1366px) {
-    max-width: 240px; // 1366
-  }
-
-  @media (max-width: 1024px) {
-    max-width: 220px;
-  }
-
   @media (max-width: 768px) {
-    max-width: 180px; 
+    width: 100%;
+    max-width: 472px;
+    height: auto;
+    flex-direction: column;
   }
 `;
 
 // Img personagem
 export const CharacterImage = styled.img`
-  width: 100%;
-  height: 200px; 
+  width: 133px; /* Altura fixa correspondente ao card */
+  height: 165px;
   object-fit: cover;
+  flex-shrink: 0; /* Garante que a imagem não seja redimensionada */
+  padding: 12px;
+  border-radius: 18px;
+`;
+
+// Nome e informações do personagem
+export const CharacterName = styled.h3`
+  font-size: 20px;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 500;
+  line-height: 20px;
+`;
+
+export const CharacterDetails = styled.div`
+  
+  flex: 1; /* Faz com que este container ocupe o restante do espaço */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background-color: #313140;
 
   @media (max-width: 768px) {
-    height: 180px; 
-  }
-
-  @media (min-width: 1600px) {
-    height: 300px; 
+    width: 100%;
+    text-align: center;
   }
 `;
 
-// Nome
-export const CharacterName = styled.h3`
-  font-size: 1.1rem;
-  color: #333;
-  text-align: center;
-  padding: 10px;
-  background-color: #f0f0f0;
-
-  @media (max-width: 768px) {
-    font-size: 1rem; 
-  }
+export const CharacterDescription = styled.p`
+  font-size:14px;
+  color: #FFFFFF;
+  
+  line-height: 14px;
+  width: 244px;
+  font-weight: 300;
 `;

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { CardContainer, CharacterImage, CharacterName, CardList,
+import { CardContainer, CharacterImage, CharacterName, CardList, CharacterDetails, CharacterDescription,
 } from "./styled";
 
 export const ResultCard = ({ resultado }) => {
@@ -13,7 +13,12 @@ export const ResultCard = ({ resultado }) => {
             <Link to={`/card/${character.id}`} key={character.id}>
               <CardContainer>
                 <CharacterImage src={imageUrl} alt={character.name} />
-                <CharacterName>{character.name}</CharacterName>
+                <CharacterDetails>
+                  <CharacterName>{character.name}</CharacterName>
+                  <CharacterDescription>
+                    {character.description || "Descrição indisponível."}
+                  </CharacterDescription>
+                </CharacterDetails>
               </CardContainer>
             </Link>
           );

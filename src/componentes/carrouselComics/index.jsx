@@ -1,9 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
-import { ComicCard, ComicImage, ComicInfo, CarouselContainer } from "./styled";
+import { ComicCard, ComicImage, ComicTitle, CarouselContainer, ComicsWrapper } from "./styled";
 
 const CarrouselComics = ({ comics }) => {
-  // Configurações do react-slick
   const settings = {
     dots: true,
     infinite: true,
@@ -32,15 +31,15 @@ const CarrouselComics = ({ comics }) => {
     <CarouselContainer>
       <Slider {...settings}>
         {comics.map((comic) => (
-          <ComicCard key={comic.id}>
-            <ComicImage
-              src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
-              alt={comic.title}
-            />
-            <ComicInfo>
-              <h3>{comic.title}</h3>
-            </ComicInfo>
-          </ComicCard>
+          <ComicsWrapper key={comic.id}>
+            <ComicCard>
+              <ComicTitle>{comic.title}</ComicTitle>
+              <ComicImage
+                src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
+                alt={comic.title}
+              />
+            </ComicCard>
+          </ComicsWrapper>
         ))}
       </Slider>
     </CarouselContainer>

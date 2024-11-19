@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import { DetailContainer } from "./styled";
+import { Comiics, DetailContainer } from "./styled";
 import CardDetails from "../../componentes/cardDetails";
 
 import CarrouselComics from "../../componentes/carrouselComics";
@@ -54,8 +54,9 @@ const Card = () => {
     <DetailContainer>
       <Banner image="/images/bannerBlack.png"/>
       {characterData && <CardDetails characterData={characterData} />}
-    
+    <Comiics>
       {comics.length > 0 && <CarrouselComics comics={comics} />}
+      </Comiics>
     </DetailContainer>
   );
 };

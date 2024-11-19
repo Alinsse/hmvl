@@ -7,6 +7,7 @@ export const DetailContainer = styled.div`
   align-items: center;
   padding: 20px;
   gap: 20px;
+  width: 100%;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -71,3 +72,22 @@ export const CharacterInfo = styled.div`
   }
 `;
 
+
+export const Comiics = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  width: 40%;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  @media (min-width: 1600px) {
+    padding: 40px;
+  }
+`;

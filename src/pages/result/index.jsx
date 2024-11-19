@@ -5,6 +5,7 @@ import { ResultCard } from "../../componentes/resultCard";
 import Banner from "../../componentes/Banner";
 import { PageContainer, CardsWrapper } from "./styled";
 import SearchInput from "../../componentes/input";
+import Logo from "../../componentes/Logo";
 
 export const Result = () => {
   const [params] = useSearchParams();
@@ -37,8 +38,10 @@ export const Result = () => {
   }, [name]);
 
   return (
+    
     <PageContainer>
       <Banner image="/images/bannerBlack.png" />
+      <Logo/>
       <SearchInput onSearch={handleSearch} /> 
       <CardsWrapper>
         <ResultCard resultado={resultado} />
