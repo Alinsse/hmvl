@@ -25,7 +25,7 @@ export const Home = () => {
         <InputS onSearch={handleSearch}/>
 
         <Apresentacao />
-      </SectionHome>
+      </SectionHome>z
     </>
   );
 };

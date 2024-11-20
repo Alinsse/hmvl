@@ -4,12 +4,13 @@ import styled from "styled-components";
 // Container lista cards
 export const DetailContainer = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   gap: 20px;
   width: 80%;
   position: relative;
   
+`;
+
+export const ContainerInfo = styled.div`
 `;
 
 // Card
@@ -18,7 +19,7 @@ export const CharacterInfo = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #313140;
+  background-color: #cbcbd6;
   border-radius: 14px;
   padding: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -31,9 +32,9 @@ export const CharacterInfo = styled.div`
 
 // img personagem
 export const CharacterImage = styled.img`
-  width: 133px;
-  height: 165px;
-  border-radius: 12px;
+  width: 208px;
+  height: 258px;
+  
   
 `;
 
@@ -45,4 +46,13 @@ export const CharacterName = styled.p`
   color: #ffffff;
   line-height: 20px;
   font-family: "Inter", sans-serif;
+`;
+
+
+
+export const Description = styled.div`
+background-color: aliceblue;
+`;
+
+export const Line =styled.div`
 `;

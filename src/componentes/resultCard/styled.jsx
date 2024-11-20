@@ -13,7 +13,7 @@ export const CardList = styled.div`
   margin: 0 auto; 
   right: 31px;
   top: 166px;
-  height: 100vh;
+  
 
   @media (max-width: 1366px) {
     padding: 15px;

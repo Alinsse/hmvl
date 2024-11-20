@@ -3,7 +3,7 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import axios from "axios";
 import { ResultCard } from "../../componentes/resultCard";
 import Banner from "../../componentes/Banner";
-import { PageContainer, CardsWrapper, LogoResult, SearchInputS } from "./styled";
+import { PageContainer, CardsWrapper, LogoResult, SearchInputS, BannerResult } from "./styled";
 import SearchInput from "../../componentes/input";
 import Logo from "../../componentes/Logo";
 
@@ -39,7 +39,7 @@ export const Result = () => {
 
   return (
     
-    <PageContainer>
+    <BannerResult>
       <Banner image="/images/bannerBlack.png" />
       <LogoResult>
       <Logo/>
@@ -50,6 +50,6 @@ export const Result = () => {
       <CardsWrapper>
         <ResultCard resultado={resultado} />
       </CardsWrapper>
-    </PageContainer>
+    </BannerResult>
   );
 };
