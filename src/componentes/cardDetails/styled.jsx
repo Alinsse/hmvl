@@ -8,7 +8,7 @@ export const DetailContainer = styled.div`
   width: 62%;
   position: relative;
   flex-flow: column;
-  right: 244px;
+  right: 258px;
 `;
 
 export const ContainerInfo = styled.div`

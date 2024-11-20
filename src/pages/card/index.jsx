@@ -1,18 +1,22 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import axios from "axios";
-import { Comiics, DetailContainer, LogoCard } from "./styled";
+import { Comiics, DetailContainer, LogoCard, SearchInputSC } from "./styled";
 import CardDetails from "../../componentes/cardDetails";
 
 import CarrouselComics from "../../componentes/carrouselComics";
 import Banner from "../../componentes/Banner";
 import Logo from "../../componentes/Logo";
+import { SearchInputS } from "../result/styled";
 
 const Card = () => {
   const { id } = useParams();
   const [characterData, setCharacterData] = useState(null);
   const [comics, setComics] = useState([]);
   const [loading, setLoading] = useState(true);
+ const handleSearch = (searchQuery) => {
+    Navigate(`/result?name=${searchQuery}`);  
+  }; 
 
   const url = "http://gateway.marvel.com/v1/public";
   const ts = "1";
@@ -54,13 +58,17 @@ const Card = () => {
   return (
     <DetailContainer>
       <Banner image="/images/bannerBlack.png"/>
+      <SearchInputSC>
+      <SearchInputS onSearch={handleSearch} /> 
+      </SearchInputSC>
       <LogoCard>
       <Logo/>
       </LogoCard>
+     
       {characterData && <CardDetails characterData={characterData} />}
-    <Comiics>
+    
       {comics.length > 0 && <CarrouselComics comics={comics} />}
-      </Comiics>
+     
     </DetailContainer>
   );
 };

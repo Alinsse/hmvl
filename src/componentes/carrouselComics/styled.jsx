@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
 export const CarouselContainer = styled.div`
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  width: 90%;
-  max-width: 600px;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  bottom: 252px;
+  left: 401px;
+  width:48%;
+  padding: 0 27px 13px 28px;
+ 
+ 
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
   z-index: 1000;
   overflow: hidden;
 `;
@@ -33,24 +33,21 @@ export const ComicCard = styled.div`
 
 export const ComicTitle = styled.div`
   position: absolute;
-  top: 0;
-  left: 0;
+ bottom: 0px;
   width: 100%;
-  height: 50px;
+  line-height: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.7);
+  
   color: #ffffff;
-  font-size: 0.9rem;
-  font-weight: bold;
-  text-align: center;
-  padding: 5px;
-  z-index: 2;
+  font-size: 20px;
+  font-weight: 500;
+ 
+
 `;
 
 export const ComicImage = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: cover;
+ 
 `;

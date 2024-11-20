@@ -5,9 +5,8 @@ export const DetailContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  gap: 20px;
-  width: 100%;
+height: 100vh;
+ 
 
   
 `;
@@ -55,9 +54,15 @@ export const Comiics = styled.div`
 `;
 
 export const LogoCard = styled.div`
-left:335px;
-position: absolute;
-top: 162px;
-width: 25%;
+right:730px;
+position: relative;
+top: 6px;
+width: 16%;
 
+`;
+
+export const SearchInputSC = styled.div `
+width: 100%;
+background-color: aliceblue;
+position: absolute;
 `;
