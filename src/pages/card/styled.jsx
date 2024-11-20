@@ -53,3 +53,11 @@ export const Comiics = styled.div`
 
   
 `;
+
+export const LogoCard = styled.div`
+left:335px;
+position: absolute;
+top: 162px;
+width: 25%;
+
+`;
