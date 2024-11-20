@@ -5,31 +5,35 @@ export const SectionHome = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 20px;
-    min-height: 100vh;
+    min-height: calc(100vh - 200px); /* Desconta o espaço ocupado pelo logo */
     width: 100%;
     background-color: #121212;
+    margin-top: 150px; /* Garante que fique abaixo do logo */
 
     @media (max-width: 768px) {
         padding: 10px;
+        margin-top: 120px; /* Ajuste para telas menores */
     }
 `;
 
 
 export const SearchContainer = styled.div`
-    display: flex;
+   display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     max-width: 500px;
-    margin-top: 20px;
+    margin: 20px 0; /* Espaço entre o input e outros elementos */
     position: relative;
+    z-index: 1; /* Garante que apareça sobre outros elementos */
 
     @media (max-width: 768px) {
-        flex-direction: row;
         max-width: 100%;
+        flex-direction: row;
     }
+
 `;
 
 export const ButtonSearch = styled.button`
@@ -56,15 +60,23 @@ export const ButtonSearch = styled.button`
 
 
 export const Input = styled.input`
-    width: 100%;
+     width: 100%;
     padding: 10px;
     padding-right: 50px;
     border: 1px solid #ddd;
     border-radius: 5px;
     outline: none;
+    z-index: 1;
 
     @media (max-width: 768px) {
         padding: 8px;
         padding-right: 40px;
     }
+`;
+
+export const SectionLogo= styled.section`
+left:335px;
+position: absolute;
+top: 162px;
+width: 25%;
 `;

@@ -32,6 +32,13 @@ export const PageContainer = styled.div`
     }
 `;
 
+export const LogoResult = styled.div`
+top: 10px;
+position: relative;
+width: 327px;
+right: 741px;
+`;
+
 export const CardsWrapper = styled.div`
     width: 100%;
     display: grid;
@@ -47,4 +54,11 @@ export const CardsWrapper = styled.div`
         grid-template-columns: 1fr; 
         gap: 15px;
     }
+`;
+
+export const SearchInputS = styled.div `
+top: -536px;
+position: relative;
+
+
 `;

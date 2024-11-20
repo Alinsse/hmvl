@@ -4,10 +4,10 @@ export const InputWrapper = styled.div`
   display: flex;
   align-items: center;
   position: relative;
-  width: 100%;
-  max-width: 350px;
-  left: 354px;
-  top: 73px;;
+  width: 414px;
+  
+  left: 327px;
+  top: 430px;
 `;
 
 export const Input = styled.input`

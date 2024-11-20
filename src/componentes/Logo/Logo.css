@@ -1,12 +1,10 @@
 .logo {
     
-    width: 30%;
-    right: 619px;
-    top:23px;
+   
     position: relative;
 }
 
 .logo img {
-   width:60%;
+   width:100%;
    
 }

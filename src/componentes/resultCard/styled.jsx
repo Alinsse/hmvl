@@ -11,8 +11,8 @@ export const CardList = styled.div`
   
   max-width: 1920px; // tela grande 
   margin: 0 auto; 
-  right: 75px;
-  top: 370px;
+  right: 31px;
+  top: 166px;
   height: 100vh;
 
   @media (max-width: 1366px) {
@@ -87,7 +87,7 @@ export const CharacterDetails = styled.div`
 export const CharacterDescription = styled.p`
   font-size:14px;
   color: #FFFFFF;
-  
+ 
   line-height: 14px;
   width: 244px;
   font-weight: 300;
