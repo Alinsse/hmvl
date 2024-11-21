@@ -14,7 +14,7 @@ export const BannerResult = styled.section`
 
   @media (max-width: 700px) {
     padding: 10px;
-    min-height: 100vh; /* Para acomodar melhor em telas menores */
+    min-height: 100vh; 
   
     max-width: 100%;
   }
@@ -30,7 +30,7 @@ position: relative;
   right: 741px;
 
   @media (max-width: 1366px) {
-    right: 500px; /* Ajuste para resoluções médias */
+    right: 500px; 
     top: 5px;
   }
 
@@ -46,7 +46,7 @@ export const CardsWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  padding: 20px; /* Adicionado para dar espaçamento interno */
+  padding: 20px; 
 
   @media (max-width: 1366px) {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -55,7 +55,7 @@ export const CardsWrapper = styled.div`
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr; 
-    gap: 10px; /* Menor espaçamento entre os cartões no mobile */
+    gap: 10px; 
   }
 `;
 export const SearchInputS = styled.div `
@@ -66,6 +66,8 @@ export const SearchInputS = styled.div `
   border-radius: 5px;
   outline: none;
   z-index: 1;
+  top: -520px;
+  left: 650px;
 
 
   @media (max-width: 1366px) {

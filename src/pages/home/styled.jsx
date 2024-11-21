@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 
 export const SectionHome = styled.section`
+position: absolute;
     display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,14 +12,13 @@ export const SectionHome = styled.section`
   width: 100%;
   background-color: #121212;
   margin-top: 150px;
+  
 
   @media (max-width: 1920px) and (min-width: 1366px) {
     margin-top: 130px;
   }
 
-  @media (max-width: 1366px) {
-    margin-top: 100px;
-  }
+  
 
   @media (max-width: 768px) {
     padding: 10px;
@@ -51,38 +51,10 @@ export const SearchContainer = styled.div`
   }
 `;
 
-export const ButtonSearch = styled.button`
-    background-color: #ff3d00;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  position: absolute;
-  right: 0;
-  border-radius: 0 5px 5px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &:hover {
-    background-color: #e63900;
-  }
-
-  @media (max-width: 1920px) and (min-width: 1366px) {
-    padding: 8px;
-  }
-
-  @media (max-width: 1366px) {
-    padding: 7px;
-  }
-
-  @media (max-width: 768px) {
-    padding: 6px;
-    right: 5px;
-  }
-`;
 
 
-export const Input = styled.input`
+
+export const InputWrapper = styled.input`
     width: 100%;
   padding: 10px;
   padding-right: 50px;
@@ -93,12 +65,10 @@ export const Input = styled.input`
 
   @media (max-width: 1920px) and (min-width: 1366px) {
     padding: 9px;
+    top: 20px;
   }
 
-  @media (max-width: 1366px) {
-    padding: 8px;
-    padding-right: 45px;
-  }
+   
 
   @media (max-width: 768px) {
     padding: 7px;
@@ -113,12 +83,12 @@ export const SectionLogo= styled.section`
   left: 335px;
 
   @media (max-width: 1920px) and (min-width: 1366px) {
-    left: 270px; /* Ajuste para 1366px */
+    left: 356px; 
     width: 30%;
   }
 
   @media (max-width: 1366px) {
-    left: 150px; /* Ajuste para dispositivos menores */
+    left: 150px;
     width: 35%;
     top: 150px;
   }

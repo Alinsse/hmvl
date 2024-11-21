@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-// Container lista cards
+
 export const DetailContainer = styled.div`
   display: flex;
   gap: 20px;
@@ -10,12 +10,12 @@ export const DetailContainer = styled.div`
   right: 258px;
 
   @media (max-width: 1366px) {
-    width: 80%; /* Ajuste para telas menores */
+    width: 80%; 
     right: 100px;
   }
 
   @media (max-width: 768px) {
-    width: 90%; /* Ajuste para telas ainda menores */
+    width: 90%; 
     left: -10px;
     text-align: center;
     top: 66px;
@@ -54,12 +54,12 @@ export const CharacterImage = styled.img`
   height: 258px;
 
   @media (max-width: 1366px) {
-    width: 180px; /* Ajuste do tamanho da imagem */
+    width: 180px; 
     height: 230px;
   }
 
   @media (max-width: 768px) {
-    width: 150px; /* Ajuste para telas menores */
+    width: 150px; 
     height: 200px;
   }
 `;
@@ -73,7 +73,7 @@ export const CharacterName = styled.p`
   font-family: "Inter", sans-serif;
 
   @media (max-width: 768px) {
-    font-size: 16px; /* Ajuste para telas menores */
+    font-size: 16px;
     position: relative;
     
   }

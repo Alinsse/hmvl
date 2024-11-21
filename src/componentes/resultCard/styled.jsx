@@ -7,7 +7,7 @@ export const CardList = styled.div`
   justify-content: center;
   gap: 37px 42px;
   position: relative;
-  max-width: 100%; /* Garante que ocupe todo o espaço disponível */
+  max-width: 100%; 
   margin: 0 auto; 
   right: 0;
   top: 166px;

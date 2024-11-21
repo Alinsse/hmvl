@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Banner from "../../componentes/Banner";
-import { SectionHome } from "../../componentes/section";
+import { SectionHome, Input } from "../../componentes/section";
 import Logo from "../../componentes/Logo";
 import { Apresentacao } from "../../componentes/apresentacao";
 import InputS from "../../componentes/input";
@@ -21,11 +21,11 @@ export const Home = () => {
       <Logo />
       </SectionLogo>
       <SectionHome>
-       
+         
         <InputS onSearch={handleSearch}/>
 
         <Apresentacao />
-      </SectionHome>z
+      </SectionHome>
     </>
   );
 };

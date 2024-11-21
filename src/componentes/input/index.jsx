@@ -1,7 +1,7 @@
 // SearchInput.jsx
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
-import { InputWrapper, Input, Icon } from "./styled"; // Importando os estilos de styled-components
+import { InputWrapper, Input, Icon } from "./styled"; 
 
 const InputS = ({ onSearch }) => {
   const [query, setQuery] = useState("");

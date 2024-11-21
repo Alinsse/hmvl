@@ -29,13 +29,13 @@ export const CarouselContainer = styled.div`
 
 export const ComicsWrapper = styled.div`
   display: flex;
-  justify-content: space-between; /* Espaçamento entre os quadrinhos */
+  justify-content: space-between;
   align-items: center;
 
-  /* Ajustes para dispositivos móveis */
+
   @media (max-width: 768px) {
     justify-content: center;
-    gap: 10px; /* Espaçamento entre os cards */
+    gap: 10px; 
     flex-wrap: wrap;
   }
 `;
@@ -44,13 +44,12 @@ export const ComicCard = styled.div`
   position: relative;
   width: 150px;
   height: 200px;
-  margin: 0 10px; /* Espaçamento lateral */
+  margin: 0 10px; 
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  flex-shrink: 0; /* Evita que o card diminua de tamanho */
+  flex-shrink: 0; 
 
-  /* Ajustes para dispositivos móveis */
   @media (max-width: 768px) {
     width: 120px;
     height: 180px;
@@ -68,7 +67,7 @@ export const ComicTitle = styled.div`
   font-size: 20px;
   font-weight: 500;
 
-  /* Ajustes para dispositivos móveis */
+ 
   @media (max-width: 768px) {
     font-size: 16px;
     line-height: 18px;
@@ -78,5 +77,5 @@ export const ComicTitle = styled.div`
 export const ComicImage = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Garante que a imagem fique proporcional */
+  object-fit: cover; 
 `;

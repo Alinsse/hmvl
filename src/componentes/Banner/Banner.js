@@ -1,6 +1,7 @@
 import './Banner.css'
 
 
+
 export const Banner = ({image}) => {
     // JSX
     return (

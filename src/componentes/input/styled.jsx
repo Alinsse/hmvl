@@ -7,21 +7,10 @@ export const InputWrapper = styled.div`
  
   max-width: 414px;
   width: 443px;
-  left: 442px; /* Ajustado para posicionamento relativo */
+  left: 442px; 
   top: 400px;
 
-  @media (max-width: 1920px) and (min-width: 1367px) {
-    left: 360px;
-    top: 400px;
-    
-  }
-
-  @media (max-width: 1366px) {
-    max-width: 360px;
-    left: 20%;
-    top: 380px;
-  }
-
+  
   @media (max-width: 768px) {
     max-width: 90%;
     left: 5%;

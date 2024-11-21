@@ -5,7 +5,7 @@ export const DetailContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh; /* Garante que o conteúdo ocupe toda a altura */
+  min-height: 100vh;
  
 
   @media (max-width: 1366px) {
@@ -29,11 +29,10 @@ export const CharacterImage = styled.img`
   }
 
   @media (max-width: 768px) {
-    max-width: 100%; /* Garante que preencha o container no mobile */
+    max-width: 100%; 
   }
 `;
 
-// Informações do personagem
 export const CharacterInfo = styled.div`
 max-width: 600px;
   text-align: center;
@@ -89,12 +88,13 @@ export const Comiics = styled.div`
 
 export const LogoCard = styled.div`
  position: relative;
-  top: 20px;
-  width: 16%;
+  top: 10px;
+  width: 327px;
+  right: 741px;
 
   @media (max-width: 1366px) {
-    top: 15px;
-    width: 20%;
+    right: 500px; 
+    top: 5px;
   }
 
   @media (max-width: 768px) {
@@ -108,8 +108,8 @@ export const LogoCard = styled.div`
 
 export const SearchInputS = styled.div `
 position: relative;
-  top: -500px; /* Ajusta para uma posição consistente */
-  margin: 0 auto; /* Centraliza no container */
+  top: -500px; 
+  margin: 0 auto; 
 
   @media (max-width: 1366px) {
     top: -350px;

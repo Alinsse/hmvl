@@ -25,6 +25,8 @@ const Card = () => {
   const apikey = "06ead66137452ef75685fcdc895a6c0b";
   const hash = "2774d42849c52a2ec23f9b2298e41e7a";
 
+  
+
   useEffect(() => {
     const fetchCharacterData = async () => {
       try {

@@ -1,30 +1,30 @@
 import styled from "styled-components";
 
 export const ApresentacaoStyled = styled.section`
-  text-align: justify; /* Centraliza o texto horizontalmente */
+  text-align: justify; 
   position: absolute;
   left: 325px;
   top: 512px;
-  width: 60%; /* Ajuste para telas grandes */
+  width: 60%; 
   
   @media (max-width: 1920px) and (min-width: 1367px) {
-    left: 300px; /* Ajuste para telas Full HD */
+    left: 300px;
     top: 500px;
-    width: 70%;
+    width: 23%;
   }
 
   @media (max-width: 1366px) {
-    left: 200px; /* Ajuste para telas 1366px */
+    left: 200px; 
     top: 450px;
     width: 80%;
   }
 
   @media (max-width: 768px) {
-    position: relative; /* Remove posicionamento absoluto no mobile */
+    position: relative; 
     left: 14px;
     top: 225px;
     width: 90%;
-    padding: 10px; /* Adiciona espaçamento interno para textos */
+    padding: 10px;
   }
 
   h1 {
@@ -38,7 +38,7 @@ export const ApresentacaoStyled = styled.section`
     }
 
     @media (max-width: 768px) {
-      font-size: 1.2rem; /* Ajuste para telas menores */
+      font-size: 1.2rem; //mobile
     }
   }
 
@@ -50,12 +50,12 @@ export const ApresentacaoStyled = styled.section`
     width: 94%;
 
     @media (max-width: 1366px) {
-      font-size: 48px; /* Ajuste para telas 1366px */
+      font-size: 48px; 
       line-height: 50px;
     }
 
     @media (max-width: 768px) {
-      font-size: 50px; /* Ajuste para mobile */
+      font-size: 50px; // mobile
       line-height: 38px;
     }
   }
