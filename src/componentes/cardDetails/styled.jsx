@@ -19,7 +19,7 @@ gap: 15px;
 
 // Card
 export const CharacterInfo = styled.div`
-  width: 400px;
+  width: 441px;
   display: flex;
   flex-direction: column;
  
@@ -60,6 +60,8 @@ export const Line =styled.div`
 display: flex;
 color: #FFFFFF;
 text-align: center;
-left: -22px;
+left: 4px;
 position: relative;
+gap: 42px;
+width: 83%;
 `;

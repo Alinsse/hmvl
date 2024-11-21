@@ -61,8 +61,7 @@ width: 16%;
 
 `;
 
-export const SearchInputSC = styled.div `
-width: 100%;
-background-color: aliceblue;
-position: absolute;
+export const SearchInputS = styled.div `
+top: -536px;
+position: relative;
 `;

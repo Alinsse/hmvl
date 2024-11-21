@@ -8,8 +8,10 @@ import CarrouselComics from "../../componentes/carrouselComics";
 import Banner from "../../componentes/Banner";
 import Logo from "../../componentes/Logo";
 import { SearchInputS } from "../result/styled";
+import SearchInput from "../../componentes/input";
 
 const Card = () => {
+  
   const { id } = useParams();
   const [characterData, setCharacterData] = useState(null);
   const [comics, setComics] = useState([]);
@@ -58,12 +60,13 @@ const Card = () => {
   return (
     <DetailContainer>
       <Banner image="/images/bannerBlack.png"/>
-      <SearchInputSC>
-      <SearchInputS onSearch={handleSearch} /> 
-      </SearchInputSC>
+     
       <LogoCard>
       <Logo/>
       </LogoCard>
+      <SearchInputS>
+      <SearchInput onSearch={handleSearch} /> 
+      </SearchInputS>
      
       {characterData && <CardDetails characterData={characterData} />}
     

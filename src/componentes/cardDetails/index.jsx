@@ -21,10 +21,13 @@ const CardDetails = ({ characterData }) => {
         <h2>{name}</h2>
         </CharacterName>
         <Line>
-                <p><strong>Quadrinhos:</strong> {comics.available}</p>
-          <p><strong>Séries:</strong> {series.available}</p>
-          <p><strong>Eventos:</strong> {events.available}</p>
-          <p><strong>Histórias:</strong>  {stories.available}</p>
+        <p> <strong>{stories.available} </strong>Histórias </p>
+        <p> <strong>{events.available} </strong>Eventos </p>
+        <p> <strong>{series.available} </strong>Séries</p>
+                <p><strong>{comics.available}</strong> Quadrinhos </p>
+          
+          
+         
           </Line>
       </CharacterInfo>
       </ContainerInfo>
