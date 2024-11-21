@@ -1,10 +1,22 @@
 .logo {
-    
-   
-    position: relative;
+  position: relative;
+  width: auto;
+  max-width: 400px; /* Define um limite máximo para tamanhos grandes */
+
+  @media (max-width: 1920px) and (min-width: 1367px) {
+    max-width: 300px; /* Ajuste proporcional para telas Full HD */
+  }
+
+  @media (max-width: 1366px) {
+    max-width: 250px; /* Reduz tamanho para telas menores */
+  }
+
+  @media (max-width: 768px) {
+    max-width: 170px; /* Ajuste para dispositivos móveis */
+  }
 }
 
 .logo img {
-   width:100%;
-   
+  width: 100%; /* Garante que a imagem preencha o espaço da logo */
+  height: auto; /* Mantém a proporção da imagem */
 }

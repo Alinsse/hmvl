@@ -6,21 +6,29 @@ export const CardList = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: 37px 42px;
-  
   position: relative;
-  
-  max-width: 1920px; // tela grande 
+  max-width: 100%; /* Garante que ocupe todo o espaço disponível */
   margin: 0 auto; 
-  right: 31px;
+  right: 0;
   top: 166px;
-  
+
+  @media (max-width: 1920px) and (min-width: 1367px) {
+    gap: 30px 35px;
+    padding: 10px;
+  }
 
   @media (max-width: 1366px) {
+    gap: 25px 30px;
     padding: 15px;
+    top: 150px;
   }
 
   @media (max-width: 768px) {
-    padding: 10px;
+    gap: 20px 25px;
+    padding: 0 36px;
+    left: -15px;
+    flex-direction: column;
+    top: 60px;
   }
 `;
 
@@ -42,37 +50,61 @@ export const CardContainer = styled.div`
     transform: scale(1.05);
   }
 
+  @media (max-width: 1366px) {
+    width: 420px;
+    height: 160px;
+  }
+
   @media (max-width: 768px) {
     width: 100%;
-    max-width: 472px;
+    max-width: 400px;
     height: auto;
     flex-direction: column;
   }
 `;
 
-// Img personagem
+// Imagem do personagem
 export const CharacterImage = styled.img`
-  width: 133px; /* Altura fixa correspondente ao card */
+  width: 133px;
   height: 165px;
   object-fit: cover;
-  flex-shrink: 0; /* Garante que a imagem não seja redimensionada */
+  flex-shrink: 0;
   padding: 12px;
   border-radius: 18px;
+
+  @media (max-width: 1366px) {
+    width: 120px;
+    height: 150px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100px;
+    height: 130px;
+  }
 `;
 
-// Nome e informações do personagem
+// Nome do personagem
 export const CharacterName = styled.h3`
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0;
   font-weight: 500;
   line-height: 20px;
+
+  @media (max-width: 1366px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    text-align: center;
+  }
 `;
 
 export const CharacterDetails = styled.div`
-  
-  flex: 1; /* Faz com que este container ocupe o restante do espaço */
+  flex: 1;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   gap: 5px;
@@ -81,14 +113,25 @@ export const CharacterDetails = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     text-align: center;
+    gap: 10px;
   }
 `;
 
 export const CharacterDescription = styled.p`
-  font-size:14px;
-  color: #FFFFFF;
- 
+  font-size: 14px;
+  color: #ffffff;
   line-height: 14px;
   width: 244px;
   font-weight: 300;
+
+  @media (max-width: 1366px) {
+    font-size: 12px;
+    width: 200px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+    width: 90%;
+    text-align: center;
+  }
 `;
