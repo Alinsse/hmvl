@@ -13,9 +13,8 @@ export const ApresentacaoStyled = styled.section`
   }
 
   @media (max-width: 1366px) {
-    left: 200px; 
-    top: 450px;
-    width: 80%;
+   margin-left: 239px;
+    width: 26%;
   }
 
   @media (max-width: 768px) {

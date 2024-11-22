@@ -46,8 +46,8 @@ export const BannerH = styled.section`
   }
 
   @media (max-width: 768px) {
-    background-position: top; /* Ajuste para telas menores */
-    background-attachment: scroll; /* Fixado em dispositivos móveis pode gerar problemas */
+    background-image: none;
+   
   }
 `;
 
@@ -82,6 +82,13 @@ flex-direction: column;
 margin-top: 58px;
 margin-left: 196px;
 width: 35%;
+
+@media (max-width: 1366px) {
+  width: 39%; /* Ajusta para caber na tela */
+    margin-top: -70px; /* Remove margem negativa */
+    margin-bottom: -15px;
+    
+}
 
 @media (max-width: 768px) {
   width: 80%; /* Ajusta para caber na tela */
