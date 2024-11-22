@@ -8,8 +8,9 @@ export const BannerHome = styled.section`
   width: 100%;
   height: 100vh;
 
+  /* Ajustes para resoluções específicas */
   @media (max-width: 1920px) and (min-width: 1367px) {
-    height: 90vh; 
+    height: 90vh; /* Reduz um pouco para manter proporção */
   }
 
   @media (max-width: 1366px) {
@@ -17,6 +18,6 @@ export const BannerHome = styled.section`
   }
 
   @media (max-width: 768px) {
-    height: 60vh; 
+    height: 60vh; /* Altura menor para dispositivos móveis */
   }
 `;

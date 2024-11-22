@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Navigate, useParams } from "react-router-dom";
 import axios from "axios";
-import { Comiics, DetailContainer, LogoCard, SearchInputSC } from "./styled";
+import { BannerResult, Comiics, DetailContainer, LogoCard, SearchInputSC } from "./styled";
 import CardDetails from "../../componentes/cardDetails";
 
 import CarrouselComics from "../../componentes/carrouselComics";
@@ -60,8 +60,9 @@ const Card = () => {
   console.log("Dados do personagem:", characterData);
 
   return (
+  
     <DetailContainer>
-      <Banner image="/images/bannerBlack.png"/>
+     
      
       <LogoCard>
       <Logo/>
@@ -75,6 +76,7 @@ const Card = () => {
       {comics.length > 0 && <CarrouselComics comics={comics} />}
      
     </DetailContainer>
+   
   );
 };
 

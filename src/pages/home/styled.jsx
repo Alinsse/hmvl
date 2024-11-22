@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const SectionHome = styled.section`
-position: absolute;
+ position: absolute;
     display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,7 +17,6 @@ position: absolute;
   @media (max-width: 1920px) and (min-width: 1366px) {
     margin-top: 130px;
   }
-
   
 
   @media (max-width: 768px) {
@@ -27,29 +26,7 @@ position: absolute;
 `;
 
 
-export const SearchContainer = styled.div`
-    display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 500px;
-  margin: 20px 0;
-  position: relative;
-  z-index: 1;
 
-  @media (max-width: 1920px) and (min-width: 1366px) {
-    max-width: 450px;
-  }
-
-  @media (max-width: 1366px) {
-    max-width: 400px;
-    margin: 15px 0;
-  }
-
-  @media (max-width: 768px) {
-    max-width: 100%;
-  }
-`;
 
 export const DivLogoInput = styled.div`
 display: flex;

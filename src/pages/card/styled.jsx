@@ -1,37 +1,52 @@
 import styled from "styled-components";
 
+export const BannerResult = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  
+  background-image: url('/images/bannerBlack.png'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover; /* Garante que a imagem cubra todo o espaço */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetições da imagem */
+  background-attachment: fixed;
 
+  @media (max-width: 768px) {
+    background-position: top; /* Ajuste para telas menores */
+  }
+`;
 export const DetailContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
- 
-
-  @media (max-width: 1366px) {
-    padding:5px;
-  }
+  width: 100%;
+  
+  background-image: url('/images/bannerBlack.png'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover; /* Garante que a imagem cubra todo o espaço */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetições da imagem */
+  
 
   @media (max-width: 768px) {
-    padding: 10px;
-   
+    background-position: top; /* Ajuste para telas menores */
   }
 `;
 
-
 export const CharacterImage = styled.img`
-  width: 100%;
+ width: 100%;
   max-width: 400px;
   border-radius: 10px;
 
   @media (max-width: 1366px) {
-    max-width: 100%
+    max-width: 100%;
   }
 
   @media (max-width: 768px) {
     max-width: 100%; 
   }
 `;
+
 
 export const CharacterInfo = styled.div`
 max-width: 600px;
@@ -65,7 +80,6 @@ max-width: 600px;
   }
 `;
 
-
 export const Comiics = styled.div`
  display: flex;
   flex-direction: column;
@@ -87,39 +101,36 @@ export const Comiics = styled.div`
 `;
 
 export const LogoCard = styled.div`
- position: relative;
-  top: 10px;
-  width: 327px;
-  right: 741px;
+display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinha à esquerda */
+  width: 94%;
+
+ 
 
   @media (max-width: 1366px) {
-    right: 500px; 
-    top: 5px;
+    justify-content: center; /* Centraliza para telas menores */
   }
 
   @media (max-width: 768px) {
-    top: 20px;
-    left: -3px;
+    text-align: center;
     width: 47%;
-    text-align: -webkit-center;
-   
   }
 `;
 
 export const SearchInputS = styled.div `
-position: relative;
-  top: -500px; 
-  margin: 0 auto; 
+width: 100%;
+  margin: 0 auto;
+  padding-top: 20px; 
+  display: flex;
+  justify-content: center;
 
   @media (max-width: 1366px) {
-    top: -350px;
+    padding-top: 15px;
   }
 
   @media (max-width: 768px) {
-    top: -150px;
     width: 100%;
-    padding: 0 10px;
-    margin: 0 auto; 
-    
+    padding: 10px;
   }
 `;

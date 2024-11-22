@@ -1,24 +1,23 @@
 import styled from "styled-components";
 
 
+
 export const DetailContainer = styled.div`
   display: flex;
+  flex-direction: column;
   gap: 20px;
   width: 62%;
-  position: relative;
-  flex-flow: column;
-  right: 258px;
+  margin-right: 535px;
+  z-index: 10; /* Traz os elementos para frente do banner */
 
   @media (max-width: 1366px) {
-    width: 80%; 
-    right: 100px;
+    width: 80%;
   }
 
   @media (max-width: 768px) {
-    width: 90%; 
-    left: -10px;
+    width: 90%;
     text-align: center;
-    top: 66px;
+    margin-top: 66px;
   }
 `;
 
@@ -48,6 +47,7 @@ export const CharacterInfo = styled.div`
   }
 `;
 
+
 // img personagem
 export const CharacterImage = styled.img`
   width: 208px;
@@ -64,9 +64,10 @@ export const CharacterImage = styled.img`
   }
 `;
 
+
 // nome personagem
 export const CharacterName = styled.p`
-  font-weight: 500;
+ font-weight: 500;
   font-size: 20px;
   color: #ffffff;
   line-height: 20px;
@@ -74,8 +75,6 @@ export const CharacterName = styled.p`
 
   @media (max-width: 768px) {
     font-size: 16px;
-    position: relative;
-    
   }
 `;
 
@@ -83,10 +82,10 @@ export const Description = styled.div`
   font-weight: 500;
   font-size: 14px;
   line-height: 14px;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 568px;
   height: 277px;
-  opacity: 75%;
+  opacity: 0.75;
 
   @media (max-width: 1366px) {
     width: 80%;
@@ -102,12 +101,11 @@ export const Description = styled.div`
 
 export const Line = styled.div`
   display: flex;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
-  left: 4px;
-  position: relative;
   gap: 42px;
   width: 83%;
+  z-index: 10; /* Garante que está à frente do banner */
 
   @media (max-width: 768px) {
     gap: 20px;
@@ -115,3 +113,4 @@ export const Line = styled.div`
   }
 `;
 
+//sem position

@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const ApresentacaoStyled = styled.section`
   text-align: justify; 
  
-  
+  left: 325px;
+  top: 512px;
   width: 60%; 
   
   @media (max-width: 1920px) and (min-width: 1367px) {

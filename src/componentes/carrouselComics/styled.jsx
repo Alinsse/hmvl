@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const CarouselContainer = styled.div`
-  position: relative;
-  bottom: 238px;
-  left: 401px;
+ 
+  align-self: end;
+  margin-top: -157px;
   width: 48%;
   padding: 0 27px 13px 28px;
   border-radius: 10px;

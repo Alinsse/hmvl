@@ -16,10 +16,12 @@ export const Home = () => {
 
   return (
     <>
-      <Banner image="/images/bannerBlack.png" />
+      
 
       
       <SectionHome>
+      <Banner image="/images/bannerBlack.png" />
+      
         <DivLogoInput>
       <Logo />
          <InputWrapper>
