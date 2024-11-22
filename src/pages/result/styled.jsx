@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const BannerResult = styled.section`
-    display: flex;
+   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  background-image: url('/images/bannerBlack.png'); /* Substitua pelo caminho da sua imagem */
+  background-image: url('/images/bannerBlack.png'); /* Caminho da imagem */
   background-size: cover; /* Garante que a imagem cubra todo o espaço */
   background-position: center; /* Centraliza a imagem */
   background-repeat: no-repeat; /* Evita repetições da imagem */
@@ -14,6 +14,7 @@ export const BannerResult = styled.section`
 
   @media (max-width: 768px) {
     background-position: top; /* Ajuste para telas menores */
+    background-attachment: scroll; /* Fixado em dispositivos móveis pode gerar problemas */
   }
 `;
 
@@ -33,9 +34,9 @@ position: relative;
 
   @media (max-width: 768px) {
     top: 20px;
-    left: -3px;
+    right: 0; /* Centraliza */
     width: 47%;
-    text-align: -webkit-center;
+    text-align: center;
   }
 `;
 export const CardsWrapper = styled.div`
@@ -53,30 +54,30 @@ export const CardsWrapper = styled.div`
   @media (max-width: 768px) {
     grid-template-columns: 1fr; 
     gap: 10px; 
+    margin-top: 0; /* Remove margem negativa */
   }
 `;
 export const SearchInputS = styled.div `
  width: 21%;
-  
- display: flex;
-    margin-top: -148px;
-    margin-bottom: 89px;
-    margin-left: 751px;
+  display: flex;
+  margin-top: -148px;
+  margin-bottom: 89px;
+  margin-left: 751px;
   border-radius: 5px;
   outline: none;
   z-index: 1;
-  
-
 
   @media (max-width: 1366px) {
-    top: -400px;
+    margin-left: auto;
+    margin-right: auto; /* Centraliza para telas médias */
   }
 
   @media (max-width: 768px) {
+    width: 80%; /* Ajusta para caber na tela */
+    margin-top: 20px; /* Remove margem negativa */
+    margin-bottom: 20px;
+    margin-left: auto; /* Centraliza */
+    margin-right: auto;
     padding: 7px;
-    padding-right: 40px;
-    top: -165px;
-   
   }
 `;
-
