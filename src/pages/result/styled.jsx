@@ -74,8 +74,8 @@ export const SearchInputS = styled.div `
 
   @media (max-width: 768px) {
     width: 80%; /* Ajusta para caber na tela */
-    margin-top: 20px; /* Remove margem negativa */
-    margin-bottom: 20px;
+    margin-top: -14px; /* Remove margem negativa */
+    margin-bottom: -34px;
     margin-left: auto; /* Centraliza */
     margin-right: auto;
     padding: 7px;

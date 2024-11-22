@@ -5,7 +5,6 @@ export const BannerResult = styled.section`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  
   background-image: url('/images/bannerBlack.png'); /* Substitua pelo caminho da sua imagem */
   background-size: cover; /* Garante que a imagem cubra todo o espaço */
   background-position: center; /* Centraliza a imagem */
@@ -14,42 +13,42 @@ export const BannerResult = styled.section`
 
   @media (max-width: 768px) {
     background-position: top; /* Ajuste para telas menores */
+    background-attachment: scroll; /* Evita problemas no mobile */
   }
 `;
+
 export const DetailContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  
   background-image: url('/images/bannerBlack.png'); /* Substitua pelo caminho da sua imagem */
   background-size: cover; /* Garante que a imagem cubra todo o espaço */
   background-position: center; /* Centraliza a imagem */
   background-repeat: no-repeat; /* Evita repetições da imagem */
-  
 
   @media (max-width: 768px) {
     background-position: top; /* Ajuste para telas menores */
+    background-attachment: scroll; /* Evita problemas no mobile */
   }
 `;
 
 export const CharacterImage = styled.img`
- width: 100%;
+  width: 100%;
   max-width: 400px;
   border-radius: 10px;
 
   @media (max-width: 1366px) {
-    max-width: 100%;
+    max-width: 300px;
   }
 
   @media (max-width: 768px) {
-    max-width: 100%; 
+    max-width: 90%;
   }
 `;
 
-
 export const CharacterInfo = styled.div`
-max-width: 600px;
+  max-width: 600px;
   text-align: center;
 
   h2 {
@@ -81,7 +80,7 @@ max-width: 600px;
 `;
 
 export const Comiics = styled.div`
- display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
@@ -94,19 +93,17 @@ export const Comiics = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 90%;
+    width: 95%;
     padding: 10px;
     gap: 10px;
   }
 `;
 
 export const LogoCard = styled.div`
-display: flex;
+  display: flex;
   align-items: center;
   justify-content: flex-start; /* Alinha à esquerda */
   width: 94%;
-
- 
 
   @media (max-width: 1366px) {
     justify-content: center; /* Centraliza para telas menores */
@@ -114,14 +111,15 @@ display: flex;
 
   @media (max-width: 768px) {
     text-align: center;
-    width: 47%;
+    width: 80%;
+    justify-content: center;
   }
 `;
 
-export const SearchInputS = styled.div `
-width: 100%;
+export const SearchInputS = styled.div`
+  width: 100%;
   margin: 0 auto;
-  padding-top: 20px; 
+  padding-top: 20px;
   display: flex;
   justify-content: center;
 
@@ -130,7 +128,7 @@ width: 100%;
   }
 
   @media (max-width: 768px) {
-    width: 100%;
+    width: 95%;
     padding: 10px;
   }
 `;

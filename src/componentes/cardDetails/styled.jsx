@@ -18,6 +18,7 @@ export const DetailContainer = styled.div`
     width: 90%;
     text-align: center;
     margin-top: 66px;
+    margin-right: 20px;
   }
 `;
 
