@@ -1,31 +1,30 @@
 import styled from "styled-components";
 
 export const InputWrapper = styled.div`
-  display: flex;
+  display: flex; /* Alinha o input e o ícone horizontalmente */
   align-items: center;
-  position: relative;
- 
-  max-width: 414px;
-  width: 443px;
-  left: 442px; 
-  top: 400px;
+  width: 100%;
+  max-width: 443px;
+  margin: 20px auto;
+  border: 1px solid #34ac40;
+  border-radius: 5px;
+  background-color: #fff;
+  overflow: hidden; /* Garante que o ícone não saia do limite */
 
-  
   @media (max-width: 768px) {
     max-width: 90%;
-    left: 5%;
-    top: 200px;
+    margin-top: 20px;
   }
 `;
 
 export const Input = styled.input`
-  width: 100%;
+  width: 99%;
   font-size: 16px;
-  border-radius: 5px;
-  border: 1px solid #34ac40;
+  
+  
   outline: none;
-  height: 32px;
-  padding: 5px 10px;
+  height: 36px;
+  
 
   &:focus {
     border-color: #34ac40;
@@ -43,13 +42,16 @@ export const Input = styled.input`
 `;
 
 export const Icon = styled.div`
-  position: absolute;
-  right: 10px;
+ 
   cursor: pointer;
   color: #34ac40;
   font-size: 18px;
   display: flex;
   align-items: center;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  margin: -39px;
 
   &:hover {
     color: #58ff8f;

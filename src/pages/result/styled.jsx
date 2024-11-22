@@ -1,22 +1,18 @@
 import styled from "styled-components";
 
 export const BannerResult = styled.section`
-      display: flex;
+    display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 1920px;
   min-height: 100vh;
+  background-image: url('/images/bannerBlack.png'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover; /* Garante que a imagem cubra todo o espaço */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetições da imagem */
 
-  @media (max-width: 1366px) {
-    max-width: 1366px;
-  }
-
-  @media (max-width: 700px) {
-    padding: 10px;
-    min-height: 100vh; 
-  
-    max-width: 100%;
+  @media (max-width: 768px) {
+    background-position: top; /* Ajuste para telas menores */
   }
 `;
 
@@ -46,7 +42,7 @@ export const CardsWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  padding: 20px; 
+  
 
   @media (max-width: 1366px) {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -59,15 +55,16 @@ export const CardsWrapper = styled.div`
   }
 `;
 export const SearchInputS = styled.div `
- width: 100%;
-  padding: 10px;
-  padding-right: 50px;
-  position: relative;
+ width: 21%;
+  
+ display: flex;
+    margin-top: -133px;
+    margin-bottom: 9px;
+    margin-left: 730px;
   border-radius: 5px;
   outline: none;
   z-index: 1;
-  top: -520px;
-  left: 650px;
+  
 
 
   @media (max-width: 1366px) {

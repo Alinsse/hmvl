@@ -51,23 +51,16 @@ export const SearchContainer = styled.div`
   }
 `;
 
+export const DivLogoInput = styled.div`
+display: flex;
+align-items: center;
+flex-direction: column;
+`;
 
 
-
-export const InputWrapper = styled.input`
+export const InputWrapper = styled.div`
     width: 100%;
-  padding: 10px;
-  padding-right: 50px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  outline: none;
-  z-index: 1;
-
-  @media (max-width: 1920px) and (min-width: 1366px) {
-    padding: 9px;
-    top: 20px;
-  }
-
+ 
    
 
   @media (max-width: 768px) {

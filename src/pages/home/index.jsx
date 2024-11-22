@@ -5,7 +5,7 @@ import { SectionHome, Input } from "../../componentes/section";
 import Logo from "../../componentes/Logo";
 import { Apresentacao } from "../../componentes/apresentacao";
 import InputS from "../../componentes/input";
-import { SectionLogo } from "./styled";
+import { DivLogoInput, InputWrapper, SectionLogo } from "./styled";
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -17,12 +17,15 @@ export const Home = () => {
   return (
     <>
       <Banner image="/images/bannerBlack.png" />
-      <SectionLogo>
-      <Logo />
-      </SectionLogo>
+
+      
       <SectionHome>
-         
+        <DivLogoInput>
+      <Logo />
+         <InputWrapper>
         <InputS onSearch={handleSearch}/>
+        </InputWrapper>
+        </DivLogoInput>
 
         <Apresentacao />
       </SectionHome>

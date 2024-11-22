@@ -23,8 +23,11 @@ const InputS = ({ onSearch }) => {
         value={query}
         onChange={handleChange}
         placeholder="Pesquisar"
+        
       />
-      <Icon onClick={handleSearch}> <FaSearch/> </Icon>
+      <Icon onClick={handleSearch}>
+         <FaSearch/> 
+         </Icon>
     </InputWrapper>
   );
 };
