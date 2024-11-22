@@ -1,7 +1,7 @@
 // SearchInput.jsx
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
-import { InputWrapper, Input, Icon } from "./styled"; 
+import { InputWrapper, Input, Icon } from "./styled";
 
 const InputS = ({ onSearch }) => {
   const [query, setQuery] = useState("");
@@ -23,11 +23,10 @@ const InputS = ({ onSearch }) => {
         value={query}
         onChange={handleChange}
         placeholder="Pesquisar"
-        
       />
       <Icon onClick={handleSearch}>
-         <FaSearch/> 
-         </Icon>
+        <FaSearch />
+      </Icon>
     </InputWrapper>
   );
 };

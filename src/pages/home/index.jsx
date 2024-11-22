@@ -12,22 +12,19 @@ export const Home = () => {
   const navigate = useNavigate();
   const [name, setName] = useState("");
   const handleSearch = (searchQuery) => {
-    navigate(`/result?name=${searchQuery}`);  
+    navigate(`/result?name=${searchQuery}`);
   };
 
   return (
     <BannerH>
-      
-
-      
       <SectionHome>
-      <Banner image="/images/bannerBlack.png" />
+        <Banner image="/images/bannerBlack.png" />
 
         <DivLogoInput>
-      <Logo />
-         <InputWrapper>
-        <InputS onSearch={handleSearch}/>
-        </InputWrapper>
+          <Logo />
+          <InputWrapper>
+            <InputS onSearch={handleSearch} />
+          </InputWrapper>
         </DivLogoInput>
 
         <Apresentacao />

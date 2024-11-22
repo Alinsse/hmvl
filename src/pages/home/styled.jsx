@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
-
 export const SectionHome = styled.section`
-position: absolute;
-    display: flex;
+  position: absolute;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
@@ -12,13 +11,10 @@ position: absolute;
   width: 100%;
   background-color: #121212;
   margin-top: 150px;
-  
 
   @media (max-width: 1920px) and (min-width: 1366px) {
     margin-top: 130px;
   }
-
-  
 
   @media (max-width: 768px) {
     padding: 10px;
@@ -26,33 +22,32 @@ position: absolute;
   }
 `;
 
-export const BannerH = styled.section` 
-   display: flex;
+export const BannerH = styled.section`
+  display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  background-image: url('/images/bannerBlack.png'); /* Caminho da imagem */
-  background-size: cover; /* Garante que a imagem cubra todo o espaço */
-  background-position: center; /* Centraliza a imagem */
-  background-repeat: no-repeat; /* Evita repetições da imagem */
+  background-image: url("/images/bannerBlack.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   @media (max-width: 1366px) {
-    background-size: cover; /* Garante que a imagem cubra todo o espaço */
-  background-position: center; /* Centraliza a imagem */
-  background-repeat: no-repeat; /* Evita repetições da imagem */
-  background-attachment: fixed;
-  height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
   }
 
   @media (max-width: 768px) {
     background-image: none;
-   
   }
 `;
 
 export const SearchContainer = styled.div`
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -76,36 +71,32 @@ export const SearchContainer = styled.div`
 `;
 
 export const DivLogoInput = styled.div`
-display: flex;
-align-items: center;
-flex-direction: column;
-margin-top: 58px;
-margin-left: 196px;
-width: 35%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 58px;
+  margin-left: 196px;
+  width: 35%;
 
-@media (max-width: 1366px) {
-  width: 39%; /* Ajusta para caber na tela */
-    margin-top: -70px; /* Remove margem negativa */
+  @media (max-width: 1366px) {
+    width: 39%;
+    margin-top: -70px;
     margin-bottom: -15px;
-    
-}
+  }
 
-@media (max-width: 768px) {
-  width: 80%; /* Ajusta para caber na tela */
-    margin-top: -14px; /* Remove margem negativa */
+  @media (max-width: 768px) {
+    width: 80%;
+    margin-top: -14px;
     margin-bottom: -34px;
-    margin-left: auto; /* Centraliza */
+    margin-left: auto;
     margin-right: auto;
     padding: 7px;
-}
+  }
 `;
 
-
 export const InputWrapper = styled.div`
-    width: 100%;
-    margin-top: -27px;
- 
-   
+  width: 100%;
+  margin-top: -27px;
 
   @media (max-width: 768px) {
     padding: 7px;
@@ -113,14 +104,14 @@ export const InputWrapper = styled.div`
   }
 `;
 
-export const SectionLogo= styled.section`
- position: absolute;
+export const SectionLogo = styled.section`
+  position: absolute;
   top: 162px;
   width: 25%;
   left: 335px;
 
   @media (max-width: 1920px) and (min-width: 1366px) {
-    left: 356px; 
+    left: 356px;
     width: 30%;
   }
 
@@ -137,4 +128,3 @@ export const SectionLogo= styled.section`
     text-align: -webkit-center;
   }
 `;
-

@@ -5,11 +5,9 @@ export const CardList = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
- 
-  
-  max-width: 100%; 
-  margin-top : 164px ;
-  
+
+  max-width: 100%;
+  margin-top: 164px;
 
   @media (max-width: 1920px) and (min-width: 1367px) {
     gap: 30px 35px;
@@ -19,15 +17,11 @@ export const CardList = styled.div`
   @media (max-width: 1366px) {
     gap: 25px 30px;
     margin-top: 66px;
-    
   }
 
   @media (max-width: 768px) {
-   
-    
     margin-top: 34px;
     flex-direction: column;
-    
   }
 `;
 
@@ -55,7 +49,6 @@ export const CardContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-    
     max-width: 300px;
     height: auto;
     flex-direction: column;

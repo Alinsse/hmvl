@@ -1,6 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { CardContainer, CharacterImage, CharacterName, CardList, CharacterDetails, CharacterDescription,
+import {
+  CardContainer,
+  CharacterImage,
+  CharacterName,
+  CardList,
+  CharacterDetails,
+  CharacterDescription,
 } from "./styled";
 
 export const ResultCard = ({ resultado }) => {

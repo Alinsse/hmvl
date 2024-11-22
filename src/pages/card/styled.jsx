@@ -5,21 +5,21 @@ export const BannerResult = styled.section`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-image: url('/images/bannerBlack.png'); /* Substitua pelo caminho da sua imagem */
-  background-size: cover; /* Garante que a imagem cubra todo o espaço */
-  background-position: center; /* Centraliza a imagem */
-  background-repeat: no-repeat; /* Evita repetições da imagem */
+  background-image: url("/images/bannerBlack.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 
   @media (max-width: 1366px) {
-    background-size: cover; /* Garante que a imagem cubra todo o espaço */
-  background-position: center; /* Centraliza a imagem */
-  background-repeat: no-repeat; /* Evita repetições da imagem */
-  background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   @media (max-width: 768px) {
-    background-position: top; /* Ajuste para telas menores */
-    background-attachment: scroll; /* Evita problemas no mobile */
+    background-position: top;
+    background-attachment: scroll;
   }
 `;
 
@@ -28,20 +28,20 @@ export const DetailContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-image: url('/images/bannerBlack.png'); /* Substitua pelo caminho da sua imagem */
-  background-size: cover; /* Garante que a imagem cubra todo o espaço */
-  background-position: center; /* Centraliza a imagem */
-  background-repeat: no-repeat; /* Evita repetições da imagem */
+  background-image: url("/images/bannerBlack.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   @media (max-width: 1366px) {
-    background-size: cover; /* Garante que a imagem cubra todo o espaço */
-  background-position: center; /* Centraliza a imagem */
-  background-repeat: no-repeat; /* Evita repetições da imagem */
-  background-attachment: fixed;
-  height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
   }
   @media (max-width: 768px) {
-    background-position: top; /* Ajuste para telas menores */
-    background-attachment: scroll; /* Evita problemas no mobile */
+    background-position: top;
+    background-attachment: scroll;
   }
 `;
 
@@ -114,11 +114,11 @@ export const Comiics = styled.div`
 export const LogoCard = styled.div`
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Alinha à esquerda */
+  justify-content: flex-start;
   width: 94%;
 
   @media (max-width: 1366px) {
-    right: 500px; 
+    right: 500px;
     top: 5px;
   }
 
@@ -136,7 +136,7 @@ export const SearchInputS = styled.div`
   display: flex;
   justify-content: center;
 
-    @media (max-width: 1366px) {
+  @media (max-width: 1366px) {
     margin-left: auto;
     margin-right: 250px;
   }

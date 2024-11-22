@@ -3,7 +3,13 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import axios from "axios";
 import { ResultCard } from "../../componentes/resultCard";
 import Banner from "../../componentes/Banner";
-import { PageContainer, CardsWrapper, LogoResult, SearchInputS, BannerResult } from "./styled";
+import {
+  PageContainer,
+  CardsWrapper,
+  LogoResult,
+  SearchInputS,
+  BannerResult,
+} from "./styled";
 import SearchInput from "../../componentes/input";
 import Logo from "../../componentes/Logo";
 
@@ -18,9 +24,8 @@ export const Result = () => {
   const hash = "2774d42849c52a2ec23f9b2298e41e7a";
 
   const handleSearch = (searchQuery) => {
-    navigate(`/result?name=${searchQuery}`);  
+    navigate(`/result?name=${searchQuery}`);
   };
-
 
   useEffect(() => {
     if (name) {
@@ -38,14 +43,13 @@ export const Result = () => {
   }, [name]);
 
   return (
-    
     <BannerResult>
       <Banner image="/images/bannerBlack.png" />
       <LogoResult>
-      <Logo/>
+        <Logo />
       </LogoResult>
       <SearchInputS>
-      <SearchInput onSearch={handleSearch} /> 
+        <SearchInput onSearch={handleSearch} />
       </SearchInputS>
       <CardsWrapper>
         <ResultCard resultado={resultado} />

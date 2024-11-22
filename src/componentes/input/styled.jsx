@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const InputWrapper = styled.div`
-  display: flex; /* Alinha o input e o ícone horizontalmente */
+  display: flex;
   align-items: center;
   width: 100%;
   max-width: 443px;
@@ -9,7 +9,7 @@ export const InputWrapper = styled.div`
   border: 1px solid #34ac40;
   border-radius: 5px;
   background-color: #fff;
-  overflow: hidden; /* Garante que o ícone não saia do limite */
+  overflow: hidden;
 
   @media (max-width: 768px) {
     max-width: 90%;
@@ -20,11 +20,9 @@ export const InputWrapper = styled.div`
 export const Input = styled.input`
   width: 99%;
   font-size: 16px;
-  
-  
+
   outline: none;
   height: 36px;
-  
 
   &:focus {
     border-color: #34ac40;
@@ -42,7 +40,6 @@ export const Input = styled.input`
 `;
 
 export const Icon = styled.div`
- 
   cursor: pointer;
   color: #34ac40;
   font-size: 18px;
@@ -65,4 +62,3 @@ export const Icon = styled.div`
     font-size: 14px;
   }
 `;
-//sem position

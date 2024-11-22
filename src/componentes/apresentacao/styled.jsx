@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const ApresentacaoStyled = styled.section`
-  text-align: justify; 
- margin-left: 314px;
-  
-  width: 23%; 
-  
+  text-align: justify;
+  margin-left: 314px;
+
+  width: 23%;
+
   @media (max-width: 1920px) and (min-width: 1367px) {
     left: 300px;
     top: 500px;
@@ -13,19 +13,18 @@ export const ApresentacaoStyled = styled.section`
   }
 
   @media (max-width: 1366px) {
-   margin-left: 239px;
+    margin-left: 239px;
     width: 26%;
   }
 
   @media (max-width: 768px) {
     margin-top: 71px;
-  margin-left: 29px;
+    margin-left: 29px;
     width: 90%;
-   
   }
 
   h1 {
-    color: #F46D1B;
+    color: #f46d1b;
     font-size: 16px;
     font-weight: 600;
     line-height: 16px;
@@ -43,13 +42,13 @@ export const ApresentacaoStyled = styled.section`
     font-weight: 500;
     font-size: 64px;
     line-height: 62px;
-    color: #FFFFFF;
+    color: #ffffff;
     width: 92%;
     margin-bottom: 27px;
     margin-top: -15px;
 
     @media (max-width: 1366px) {
-      font-size: 48px; 
+      font-size: 48px;
       line-height: 50px;
     }
 
@@ -63,7 +62,7 @@ export const ApresentacaoStyled = styled.section`
     font-weight: 600;
     font-size: 18px;
     line-height: 18px;
-    color: #FFFFFF;
+    color: #ffffff;
     width: 100%;
 
     @media (max-width: 1366px) {

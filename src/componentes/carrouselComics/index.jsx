@@ -1,6 +1,12 @@
 import React from "react";
 import Slider from "react-slick";
-import { ComicCard, ComicImage, ComicTitle, CarouselContainer, ComicsWrapper } from "./styled";
+import {
+  ComicCard,
+  ComicImage,
+  ComicTitle,
+  CarouselContainer,
+  ComicsWrapper,
+} from "./styled";
 
 const CarrouselComics = ({ comics }) => {
   const settings = {
@@ -22,10 +28,8 @@ const CarrouselComics = ({ comics }) => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          
         },
       },
-      
     ],
   };
 
