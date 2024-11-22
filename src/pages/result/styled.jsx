@@ -17,7 +17,7 @@ export const BannerResult = styled.section`
   background-position: center; /* Centraliza a imagem */
   background-repeat: no-repeat; /* Evita repetições da imagem */
   background-attachment: fixed;
-  height: 100vh;
+ 
   }
   @media (max-width: 768px) {
     background-position: top; /* Ajuste para telas menores */

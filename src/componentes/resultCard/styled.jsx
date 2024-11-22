@@ -18,8 +18,8 @@ export const CardList = styled.div`
 
   @media (max-width: 1366px) {
     gap: 25px 30px;
-    padding: 15px;
-    top: 150px;
+    margin-top: 66px;
+    
   }
 
   @media (max-width: 768px) {
@@ -50,7 +50,7 @@ export const CardContainer = styled.div`
   }
 
   @media (max-width: 1366px) {
-    width: 420px;
+    width: 342px;
     height: 160px;
   }
 
@@ -91,7 +91,7 @@ export const CharacterName = styled.h3`
   line-height: 20px;
 
   @media (max-width: 1366px) {
-    font-size: 18px;
+    font-size: 15px;
   }
 
   @media (max-width: 768px) {
@@ -124,8 +124,8 @@ export const CharacterDescription = styled.p`
   font-weight: 300;
 
   @media (max-width: 1366px) {
-    font-size: 12px;
-    width: 200px;
+    font-size: 10px;
+    width: 100%;
   }
 
   @media (max-width: 768px) {
