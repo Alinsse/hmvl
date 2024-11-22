@@ -2,16 +2,16 @@ import styled from "styled-components";
 
 
 export const SectionHome = styled.section`
- display: flex;
+position: absolute;
+    display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  min-height: calc(100vh - 200px);
   width: 100%;
-  
-  background-image: url('/images/bannerBlack.png'); /* Substitua pelo caminho da sua imagem */
-  background-size: cover; /* Garante que a imagem cubra todo o espaço */
-  background-position: center; /* Centraliza a imagem */
-  background-repeat: no-repeat; /* Evita repetições da imagem */
-  background-attachment: fixed;
+  background-color: #121212;
+  margin-top: 150px;
   
 
   @media (max-width: 1920px) and (min-width: 1366px) {
@@ -26,6 +26,23 @@ export const SectionHome = styled.section`
   }
 `;
 
+export const BannerH = styled.section` 
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('/images/bannerBlack.png'); /* Caminho da imagem */
+  background-size: cover; /* Garante que a imagem cubra todo o espaço */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetições da imagem */
+  background-attachment: fixed;
+
+  @media (max-width: 768px) {
+    background-position: top; /* Ajuste para telas menores */
+    background-attachment: scroll; /* Fixado em dispositivos móveis pode gerar problemas */
+  }
+`;
 
 export const SearchContainer = styled.div`
     display: flex;
@@ -55,11 +72,24 @@ export const DivLogoInput = styled.div`
 display: flex;
 align-items: center;
 flex-direction: column;
+margin-top: 58px;
+margin-left: 196px;
+width: 35%;
+
+@media (max-width: 768px) {
+  width: 80%; /* Ajusta para caber na tela */
+    margin-top: -14px; /* Remove margem negativa */
+    margin-bottom: -34px;
+    margin-left: auto; /* Centraliza */
+    margin-right: auto;
+    padding: 7px;
+}
 `;
 
 
 export const InputWrapper = styled.div`
     width: 100%;
+    margin-top: -27px;
  
    
 

@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 
 export const BannerHome = styled.section`
-    margin: 0;
-  padding: 0;
-  position: absolute;
+   
+margin-top: 85px;
+ 
   width: 100%;
   height: 100vh;
 
@@ -19,5 +19,6 @@ export const BannerHome = styled.section`
 
   @media (max-width: 768px) {
     height: 60vh; /* Altura menor para dispositivos móveis */
+    margin-top: 76px;
   }
 `;

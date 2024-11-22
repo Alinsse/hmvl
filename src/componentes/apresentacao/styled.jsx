@@ -2,10 +2,9 @@ import styled from "styled-components";
 
 export const ApresentacaoStyled = styled.section`
   text-align: justify; 
- 
-  left: 325px;
-  top: 512px;
-  width: 60%; 
+ margin-left: 314px;
+  
+  width: 23%; 
   
   @media (max-width: 1920px) and (min-width: 1367px) {
     left: 300px;
@@ -20,11 +19,10 @@ export const ApresentacaoStyled = styled.section`
   }
 
   @media (max-width: 768px) {
-    position: relative; 
-    left: 14px;
-    top: 225px;
+    margin-top: 71px;
+  margin-left: 29px;
     width: 90%;
-    padding: 10px;
+   
   }
 
   h1 {
@@ -47,7 +45,9 @@ export const ApresentacaoStyled = styled.section`
     font-size: 64px;
     line-height: 62px;
     color: #FFFFFF;
-    width: 94%;
+    width: 92%;
+    margin-bottom: 27px;
+    margin-top: -15px;
 
     @media (max-width: 1366px) {
       font-size: 48px; 

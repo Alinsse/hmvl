@@ -11,7 +11,7 @@ export const DetailContainer = styled.div`
   z-index: 10; /* Traz os elementos para frente do banner */
 
   @media (max-width: 1366px) {
-    width: 80%;
+    width: 52%;
   }
 
   @media (max-width: 768px) {

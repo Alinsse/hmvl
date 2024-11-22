@@ -53,9 +53,11 @@ export const CardsWrapper = styled.div`
   }
 
   @media (max-width: 768px) {
+  
     grid-template-columns: 1fr; 
     gap: 10px; 
     margin-top: 0; /* Remove margem negativa */
+    justify-items: center;
   }
 `;
 export const SearchInputS = styled.div `

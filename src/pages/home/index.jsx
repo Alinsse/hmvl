@@ -5,7 +5,8 @@ import { SectionHome, Input } from "../../componentes/section";
 import Logo from "../../componentes/Logo";
 import { Apresentacao } from "../../componentes/apresentacao";
 import InputS from "../../componentes/input";
-import { DivLogoInput, InputWrapper, SectionLogo } from "./styled";
+import { BannerH, DivLogoInput, InputWrapper, SectionLogo } from "./styled";
+import { BannerHome } from "../../componentes/section/styled";
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const Home = () => {
   };
 
   return (
-    <>
+    <BannerH>
       
 
       
@@ -31,6 +32,6 @@ export const Home = () => {
 
         <Apresentacao />
       </SectionHome>
-    </>
+    </BannerH>
   );
 };

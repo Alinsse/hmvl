@@ -124,7 +124,7 @@ export const SearchInputS = styled.div`
   display: flex;
   justify-content: center;
 
-  @media (max-width: 1366px) {
+    @media (max-width: 1366px) {
     margin-left: auto;
     margin-right: 250px;
   }

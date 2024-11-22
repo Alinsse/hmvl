@@ -25,7 +25,7 @@ export const ResultCard = ({ resultado }) => {
         })
       ) : (
         <p style={{ color: "#a01313", textAlign: "center" }}>
-          Nenhum resultado encontrado.
+          Procurando personagem
         </p>
       )}
     </CardList>

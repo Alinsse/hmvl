@@ -5,12 +5,11 @@ export const CardList = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 37px 42px;
-  position: relative;
+ 
+  
   max-width: 100%; 
-  margin: 0 auto; 
-  right: 0;
-  top: 166px;
+  margin-top : 164px ;
+  
 
   @media (max-width: 1920px) and (min-width: 1367px) {
     gap: 30px 35px;
@@ -24,11 +23,11 @@ export const CardList = styled.div`
   }
 
   @media (max-width: 768px) {
-    gap: 20px 25px;
-    padding: 0 36px;
-    left: -15px;
+   
+    
+    margin-top: 34px;
     flex-direction: column;
-    top: 60px;
+    
   }
 `;
 
@@ -56,8 +55,8 @@ export const CardContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 100%;
-    max-width: 400px;
+    
+    max-width: 300px;
     height: auto;
     flex-direction: column;
   }
@@ -131,7 +130,7 @@ export const CharacterDescription = styled.p`
 
   @media (max-width: 768px) {
     font-size: 12px;
-    width: 90%;
+    width: 100%;
     text-align: center;
   }
 `;
