@@ -2,21 +2,22 @@ import styled from "styled-components";
 
 
 export const SectionHome = styled.section`
- position: absolute;
-    display: flex;
+ display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  padding: 20px;
-  min-height: calc(100vh - 200px);
   width: 100%;
-  background-color: #121212;
-  margin-top: 150px;
+  
+  background-image: url('/images/bannerBlack.png'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover; /* Garante que a imagem cubra todo o espaço */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetições da imagem */
+  background-attachment: fixed;
   
 
   @media (max-width: 1920px) and (min-width: 1366px) {
     margin-top: 130px;
   }
+
   
 
   @media (max-width: 768px) {
@@ -26,7 +27,29 @@ export const SectionHome = styled.section`
 `;
 
 
+export const SearchContainer = styled.div`
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px 0;
+  position: relative;
+  z-index: 1;
 
+  @media (max-width: 1920px) and (min-width: 1366px) {
+    max-width: 450px;
+  }
+
+  @media (max-width: 1366px) {
+    max-width: 400px;
+    margin: 15px 0;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+`;
 
 export const DivLogoInput = styled.div`
 display: flex;

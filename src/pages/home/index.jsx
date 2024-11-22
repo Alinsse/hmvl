@@ -21,7 +21,7 @@ export const Home = () => {
       
       <SectionHome>
       <Banner image="/images/bannerBlack.png" />
-      
+
         <DivLogoInput>
       <Logo />
          <InputWrapper>

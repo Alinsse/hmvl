@@ -106,7 +106,8 @@ export const LogoCard = styled.div`
   width: 94%;
 
   @media (max-width: 1366px) {
-    justify-content: center; /* Centraliza para telas menores */
+    right: 500px; 
+    top: 5px;
   }
 
   @media (max-width: 768px) {
@@ -124,7 +125,8 @@ export const SearchInputS = styled.div`
   justify-content: center;
 
   @media (max-width: 1366px) {
-    padding-top: 15px;
+    margin-left: auto;
+    margin-right: 250px;
   }
 
   @media (max-width: 768px) {

@@ -13,8 +13,9 @@ export const CarouselContainer = styled.div`
   @media (max-width: 1367px) {
     bottom: 180px;
     left: 150px;
-    width: 70%;
+    width: 30%;
     padding: 0 20px;
+    text-align: -webkit-center;
   }
 
   @media (max-width: 768px) {

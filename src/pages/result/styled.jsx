@@ -49,6 +49,7 @@ export const CardsWrapper = styled.div`
   @media (max-width: 1366px) {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 15px;
+    margin-top: -60px;
   }
 
   @media (max-width: 768px) {
@@ -69,7 +70,7 @@ export const SearchInputS = styled.div `
 
   @media (max-width: 1366px) {
     margin-left: auto;
-    margin-right: auto; /* Centraliza para telas médias */
+    margin-right: 250px;
   }
 
   @media (max-width: 768px) {
