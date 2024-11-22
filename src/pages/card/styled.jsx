@@ -11,6 +11,12 @@ export const BannerResult = styled.section`
   background-repeat: no-repeat; /* Evita repetições da imagem */
   background-attachment: fixed;
 
+  @media (max-width: 1366px) {
+    background-size: cover; /* Garante que a imagem cubra todo o espaço */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetições da imagem */
+  background-attachment: fixed;
+  }
   @media (max-width: 768px) {
     background-position: top; /* Ajuste para telas menores */
     background-attachment: scroll; /* Evita problemas no mobile */
@@ -26,7 +32,13 @@ export const DetailContainer = styled.div`
   background-size: cover; /* Garante que a imagem cubra todo o espaço */
   background-position: center; /* Centraliza a imagem */
   background-repeat: no-repeat; /* Evita repetições da imagem */
-
+  @media (max-width: 1366px) {
+    background-size: cover; /* Garante que a imagem cubra todo o espaço */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetições da imagem */
+  background-attachment: fixed;
+  height: 100vh;
+  }
   @media (max-width: 768px) {
     background-position: top; /* Ajuste para telas menores */
     background-attachment: scroll; /* Evita problemas no mobile */

@@ -11,10 +11,12 @@ export const CarouselContainer = styled.div`
   overflow: hidden;
 
   @media (max-width: 1367px) {
-    bottom: 180px;
-    left: 150px;
-    width: 30%;
-    padding: 0 20px;
+    
+    bottom: -93px;
+    left: 0;
+    width: 48%;
+    
+    padding: 0 27px;
     text-align: -webkit-center;
   }
 
@@ -33,7 +35,12 @@ export const ComicsWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
 
-
+  @media (max-width:1366px)
+  {
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
   @media (max-width: 768px) {
     justify-content: center;
     gap: 10px; 
@@ -50,7 +57,14 @@ export const ComicCard = styled.div`
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   flex-shrink: 0; 
-
+  @media (max-width: 1367px) {
+   
+    text-align: -webkit-center;
+  }
+  @media (max-width: 1366px) {
+    width: 120px;
+    height: 180px;
+  }
   @media (max-width: 768px) {
     width: 120px;
     height: 180px;
